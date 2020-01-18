@@ -21,9 +21,12 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.hello.spring" />
+	<context:component-scan base-package="com.blogtest.controller" />
 	
-	<beans:bean id ="userListService" class = "com/blogtest/service/UserListServiceImpl"/>
+	<beans:bean id = "userListService" class="com.blogtest.service.UserListServiceImpl"/>
+	
+	<!-- DAO 등록 -->
+	<beans:bean id="userListDAO" class="com.blogtest.dao.UserListDAOImpl"/>
 	
 	
 	
