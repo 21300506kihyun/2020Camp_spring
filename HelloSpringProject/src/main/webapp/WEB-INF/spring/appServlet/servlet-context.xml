@@ -21,12 +21,13 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.blogtest.controller" />
+	<context:component-scan base-package="com.howtodoinjava.controller" />
 	
-	<beans:bean id = "userListService" class="com.blogtest.service.UserListServiceImpl"/>
+	<beans:bean id = "manager" class="com.howtodoinjava.service.EmployeeManagerImpl"/>
 	
 	<!-- DAO 등록 -->
-	<beans:bean id="userListDAO" class="com.blogtest.dao.UserListDAOImpl"/>
+	<beans:bean id="dao" class="com.howtodoinjava.dao.EmployeeDAOImpl"/> 
+	
 	
 	
 </beans:beans>
