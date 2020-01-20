@@ -19,4 +19,10 @@
 	<bean id="dao" class="com.crud.dao.EmpDao">    
 	<property name="template" ref="jt"></property>    
 	</bean> 
+	
+	    <!-- mybatis SqlSessionFactoryBean -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="ds"></property>
+    </bean>
+
 	</beans>
