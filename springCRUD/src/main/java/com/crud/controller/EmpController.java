@@ -15,6 +15,12 @@ public class EmpController {
 
     @Autowired
     EmpDao dao;//will inject dao from XML file    
+    
+    @RequestMapping("/home")    
+    public String home(){    
+ 
+        return "home";   
+    }    
         
     /*It displays a form to input data, here "command" is a reserved request attribute  
      *which is used to display object data into form  
